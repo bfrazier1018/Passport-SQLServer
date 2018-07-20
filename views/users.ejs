@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+  	<ol>
+  		<% for(let i = 0; i < users.length; i++) { %>
+  			<li>
+  				<a href="/users/<%=users[i].id%>"><%= users[i].fullName%></a>
+  			</li>
+  		<% } %>
+  	</ol>
+  </body>
+</html>
